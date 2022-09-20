@@ -1,0 +1,13 @@
+<div>
+    <h1>TO-DO LIST</h1>
+</div>
+
+<div class="taskDetails">
+    <label for="taskName">Enter Task</label><br>
+    <input type="text" name="taskName" [(ngModel)]="taskName">
+    <button type="button" (click)="submitTask()">Submit</button>
+</div>
+
+<ng-container *ngFor="let task of taskList">
+  <app-usertasks [tasks]="task"></app-usertasks>
+</ng-container>

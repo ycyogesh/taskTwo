@@ -1,0 +1,15 @@
+.taskList {
+    ul {
+        li {
+            list-style: none;
+
+            input {
+                .checkBox {
+                    text-decoration: line-through;
+                }
+
+            }
+
+        }
+    }
+}
