@@ -1,3 +1,9 @@
-<div class="todoList">
-  <app-userinput></app-userinput>
-</div>
+
+<app-userinput (addNewTask)="addTask($event)"></app-userinput>
+
+
+<ng-container *ngFor="let task of taskList">
+  <app-usertasks [tasks]="task"></app-usertasks>
+</ng-container>
+
+

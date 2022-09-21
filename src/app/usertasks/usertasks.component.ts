@@ -8,7 +8,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class UsertasksComponent implements OnInit {
 
   constructor() { }
-  @Input("tasks") task: string = "";
+  @Input("tasks") tasks: any;
   isActive: boolean=false;
   ngOnInit(): void {
   }
@@ -16,8 +16,10 @@ export class UsertasksComponent implements OnInit {
     console.log(event.target.checked);
     if (event.target.checked == true) {
       this.isActive = true
+      console.log(this.tasks);
       return;
     }
     this.isActive = false
+
   }
 }

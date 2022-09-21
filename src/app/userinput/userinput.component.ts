@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-userinput',
@@ -8,13 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class UserinputComponent implements OnInit {
 
   taskName:string = "";
-  taskList:Array<string> = []
+  @Output() addNewTask = new EventEmitter();
   constructor() { }
 
   ngOnInit(): void {
   }
   submitTask(){
-    this.taskList.push(this.taskName)
+    this.addNewTask.emit(this.taskName)
+    this.taskName = ""
     console.log(this.taskName);
   }
 }
