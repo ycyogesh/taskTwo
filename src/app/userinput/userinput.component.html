@@ -5,5 +5,5 @@
 <div class="taskDetails">
     <label for="taskName">Enter Task</label><br> &nbsp; &nbsp;
     <input type="text" name="taskName" placeholder="Enter task here" [(ngModel)]="taskName">&nbsp; &nbsp;
-    <button type="button" (click)="submitTask()">Submit</button>
+    <button type="button" [ngClass]="!taskName?'':'btn'" [disabled]="!taskName" (click)="submitTask()">Submit</button>
 </div>
