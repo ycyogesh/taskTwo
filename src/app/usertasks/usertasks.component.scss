@@ -2,20 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
     ul {
         li {
             list-style: none;
-
-            // input {
-            //     .checkBox {
-            //         text-decoration: line-through;
-            //     }
-
-            // }
-
         }
     }
 }
-.checkBox{
+
+.checkBox {
     text-decoration: line-through;
 }

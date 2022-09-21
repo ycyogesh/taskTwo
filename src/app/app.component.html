@@ -1,9 +1,9 @@
-
-<app-userinput (addNewTask)="addTask($event)"></app-userinput>
-
-
-<ng-container *ngFor="let task of taskList">
-  <app-usertasks [tasks]="task"></app-usertasks>
-</ng-container>
-
-
+<div class="taskInput">
+  <app-userinput (addNewTask)="addTask($event)"></app-userinput>
+</div>
+<div class="taskList">
+<h3>MY TASKS</h3>
+  <ng-container *ngFor="let task of taskList">
+    <app-usertasks [tasks]="task"></app-usertasks>
+  </ng-container>
+</div>

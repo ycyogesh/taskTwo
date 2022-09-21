@@ -20,6 +20,5 @@ export class UsertasksComponent implements OnInit {
       return;
     }
     this.isActive = false
-
   }
 }

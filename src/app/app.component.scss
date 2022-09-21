@@ -1,4 +1,21 @@
-// .todoList{
-//     display: flex;
-//     border: 2px solid black;
-// }
+.taskInput{
+    display: flex;
+    justify-content: center;
+    border: 2px solid black;
+    margin: 0 350px;
+}
+.taskList{
+    display: flex;
+    flex-flow: column;
+    align-items: start;
+    margin: 15px 350px;
+    font-size: 18px;
+    color:midnightblue;
+    border: 2px solid black;
+    h3{
+        color: navy;
+        font-size: 20px;
+        margin-left: 10px;
+        text-decoration: underline;
+    }
+}
