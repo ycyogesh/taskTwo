@@ -8,11 +8,16 @@ import { Component, Input, OnInit } from '@angular/core';
 export class UsertasksComponent implements OnInit {
 
   constructor() { }
-  @Input("tasks") task:string="";
-  isActive:boolean = false
+  @Input("tasks") task: string = "";
+  isActive: boolean=false;
   ngOnInit(): void {
   }
-  checkBox(){
-    this.isActive = !this.isActive
+  checkBox(event: any) {
+    console.log(event.target.checked);
+    if (event.target.checked == true) {
+      this.isActive = true
+      return;
+    }
+    this.isActive = false
   }
 }

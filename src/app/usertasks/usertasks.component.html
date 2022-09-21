@@ -1,5 +1,5 @@
 <div class="taskList">
     <ul>
-        <li><input [ngClass]="!isActive?'checkBox':'checkBox'" class="checkBox" type="checkbox" (click)="checkBox()">{{task}}</li>
+        <li><input [ngStyle]="isActive?{'text-decoration':'line-through'}:{}"  type="checkbox" (change)="checkBox($event)">{{task}} {{isActive}}</li>
     </ul>
 </div>

@@ -3,13 +3,16 @@
         li {
             list-style: none;
 
-            input {
-                .checkBox {
-                    text-decoration: line-through;
-                }
+            // input {
+            //     .checkBox {
+            //         text-decoration: line-through;
+            //     }
 
-            }
+            // }
 
         }
     }
+}
+.checkBox{
+    text-decoration: line-through;
 }
