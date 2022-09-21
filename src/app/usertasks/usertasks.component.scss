@@ -1,4 +1,7 @@
 .taskList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     ul {
         li {
             list-style: none;
